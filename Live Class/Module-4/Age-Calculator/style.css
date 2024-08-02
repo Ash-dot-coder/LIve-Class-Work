@@ -1,0 +1,158 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: orangered;
+    margin-top: 6.88rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.6rem;
+    font-weight: lighter;
+    letter-spacing: 0.38rem;
+}
+
+.container {
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 50px 30px;
+}
+
+.container * {
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+}
+
+.inputs-wrapper {
+    background-color: rgb(234, 176, 155);
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 13px 24px rgba(255, 68, 0, 0.546);
+    margin-bottom: 50px;
+}
+
+input,
+button {
+    height: 50px;
+    background-color: orangered;
+    color: black;
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: 0 0 11px black;
+}
+
+input {
+    width: 60%;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.42rem;
+    transition: 0.65s ease-out;
+}
+
+button {
+    width: 30%;
+    float: right;
+    transition: 0.76s ease-out;
+    font-size: 0.98rem;
+    letter-spacing: 0.34rem;
+}
+
+input:hover{
+    cursor: pointer;
+    width: 64%;
+    letter-spacing: 0.54rem;
+    transition: 0.65s ease-in;
+}
+
+button:hover {
+    cursor: pointer;
+    width: 23%;
+    transform: translate(-1rem);
+    letter-spacing: 0.031rem;
+    transition: 0.76s ease-in;
+}
+
+.outputs-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.outputs-wrapper div {
+    height: 130px;
+    width: 130px;
+    background-color: rgb(234, 176, 155);
+    border-radius: 15px;
+    color: black;
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+    box-shadow: 0 13px 24px rgba(255, 68, 0, 0.546);
+}
+
+div .seperate {
+    height: 110px;
+    width: 110px;
+    margin-top: -0.561rem;
+    border-radius: 45%;
+    background-color: orangered;
+    box-shadow: 0 0 12px black;
+    transition: 0.67s ease-out;
+}
+
+div .seperate:hover {
+    cursor: pointer;
+    height: 160px;
+    width: 160px;
+    border-radius: 12%;
+    border: 0.12rem solid rgb(234, 176, 155);
+    background-color: rgb(214, 87, 41);
+    box-shadow: 0 0 7px rgb(255, 68, 0);
+    margin-top: -2rem;
+    margin-left: -0.88rem;
+    transition: 0.78s ease-in;
+}
+
+span {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    transition: 0.65s ease-out;
+}
+
+p:hover {
+    font-size: 1.972rem;
+    transition: 0.65s ease-in;
+}
+
+.seperate span {
+    transition: 0.65s ease-out;
+}
+
+.seperate span:hover {
+    font-style: italic;
+    font-size: 3.43rem;
+    transition: 0.35s ease-in;
+}
