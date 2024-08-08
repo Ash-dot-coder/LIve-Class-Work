@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aquamarine;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.leaderboard-container {
+    max-width: 93vw;
+    margin: auto;
+    background: turquoise;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px black;
+}
+
+.ime{
+    width: 3vw;
+    height: 6vh;
+    margin: 0;
+    padding: 0;
+    animation-name: circu;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circu{
+    from{
+        transform: rotate(0deg);
+        transition: 0.03s ease-in;
+    }
+    to{
+        transform: rotate(360deg);
+        transition: 0.06s ease-in-out;
+    }
+
+}
+
+h1 {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    margin-bottom: 20px;
+}
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input,
+select {
+    flex: 1;
+}
+
+.player {
+    background-color: aquamarine;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.192vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 4px black;
+    letter-spacing: 0.12rem;
+    border: none;
+    border-radius: 2.87rem;
+    cursor: pointer;
+    margin-left: 44.15%;
+    /* margin-right: 50%; */
+    /* width: 21vw; */
+    width: 11vw;
+    transition: 0.78s ease-out;
+}
+
+.player:hover {
+    color: turquoise;
+    background-color: teal;
+    letter-spacing: 0.023rem;
+    width: 10.34vw;
+    transition: 0.67s ease-in;
+}
+
+.results-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    /* border-bottom: 1px solid #ddd; */
+    border: 1.2px solid black;
+    box-shadow: 0 0 4px rgb(74, 72, 72);
+}
+
+th {
+    background-color: rgba(6, 138, 138, 0.416);
+}
+
+.action-btn {
+    padding: 3px 2px;
+    text-align: center;
+    align-content: center;
+    width: 3vw;
+    font-size: 0.89rem;
+    color: black;
+    margin-left: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.add {
+    background-color: black;
+    color: white;
+    height: 4vh;
+    transition: 0.78s ease-out;
+}
+
+.subtract {
+    background-color: black;
+    color: white;
+    height: 4vh;
+    transition: 0.78s ease-out;
+}
+
+.subtract:hover, .add:hover{
+    /* transform: translate(-0.78rem); */
+    border-radius: 70%;
+    transition: 0.78s ease-in;
+}
+
+.delete {
+    background-color: transparent;
+    color: black;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete svg {
+    /* background-color: #dc3545; */
+    transform: translateY(0.32rem);
+    width: fit-content;
+    height: 2.68vh;
+    align-content: center;
+    transition: 0.72s ease-in-out;
+    top: 2rem;
+}
+
+.delete svg:hover{
+transform: translateY(-0.112rem);
+transition: 0.72s ease-in-out;
+}
+
+.action-btn {
+    margin-right: 3px;
+}
+
+.action-btn:last-child {
+    margin-right: 0;
+}
+
+#clanScores {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .leaderboard-container,
+    .form-container {
+        padding: 10px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
