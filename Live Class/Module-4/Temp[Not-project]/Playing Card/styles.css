@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0f0f, #1e1e1e);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 2000px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 150px;
+    height: 220px;
+    border-radius: 10px;
+    background: #5e5cfc;
+    cursor: pointer;
+    transition: transform 0.5s, background 0.4s, box-shadow 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    user-select: none;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+}
+
+.card.selected {
+    background: #ff6a6a;
+    box-shadow: 0 0 30px #ff6a6a;
+    transform: scale(1.1) rotateY(180deg);
+}
+
+.card:hover {
+    transform: scale(1.05) rotateY(10deg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card.hidden {
+    opacity: 0.5;
+    transform: scale(0.8);
+}
+
+@keyframes particleEffect {
+    0% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-20px) scale(1.2); }
+    100% { transform: translateY(0px) scale(1); }
+}

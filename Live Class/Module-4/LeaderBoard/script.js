@@ -16,12 +16,12 @@ function addPlayer(event) {
         return;
     }
 
-    if (playerScore > 500) {
-        alert("Score is out of the league.");
+    if (playerScore > 100) {
+        alert("Score is out of the league 😮");
         return;
     }
 
-    playerScore = Math.min(Math.max(playerScore, 0), 500);
+    playerScore = Math.min(Math.max(playerScore, 0), 100);
 
     const dateTime = getCurrentDateTime();
     const player = {
@@ -47,20 +47,20 @@ function getCurrentDateTime() {
 }
 
 function getLevel(score) {
-    if (score >= 401) return "Expert";
-    if (score >= 301) return "Proficient";
-    if (score >= 201) return "Advanced";
-    if (score >= 101) return "Beginner";
-    if (score >= 0) return "Noob";
+    if (score >= 80) return "Expert-🧠";
+    if (score >= 57) return "Proficient-🎯";
+    if (score >= 23) return "Skilled-🤸‍♂️";
+    if (score >= 4) return "Beginner-🏃‍♂️";
+    if (score >= 0) return "Noob-🐣";
     return "Unknown";
 }
 
 function increaseScore(index) {
-    if (players[index].score >= 500) {
-        alert("Score cannot exceed 500.");
+    if (players[index].score >= 100) {
+        alert("Score cannot exceed 100 😒");
         return;
     }
-    players[index].score = Math.min(players[index].score + 5, 500);
+    players[index].score = Math.min(players[index].score + 5, 100);
     players[index].level = getLevel(players[index].score);
     updateLeaderboard();
 }
@@ -127,7 +127,7 @@ function updateLeaderboard() {
             leaderboard.appendChild(row);
         });
 
-        const positionText = clanIndex === 0 ? 'Winner' : clanIndex === 1 ? 'Runner-up' : `Position ${clanIndex + 1}`;
+        const positionText = clanIndex === 0 ? 'Winner-🏆' : clanIndex === 1 ? 'Runner-up-🏅' : `Position ${clanIndex + 1}-🏃‍♂️`;
         const previousClan = sortedClans[clanIndex - 1];
         let scoreDifferenceText = '';
 

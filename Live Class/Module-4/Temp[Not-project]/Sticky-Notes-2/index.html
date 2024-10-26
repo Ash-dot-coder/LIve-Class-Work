@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Sticky Notes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Input Section -->
+      <div class="input-section">
+        <input
+          type="text"
+          id="noteContent"
+          placeholder="Write your note here..."
+          maxlength="200"
+        />
+        <input type="color" id="noteColor" value="#ffeb3b" />
+        <button id="addNoteBtn">Add Note</button>
+      </div>
+      <!-- Container for Sticky Notes -->
+      <div id="notesContainer" class="notes-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
