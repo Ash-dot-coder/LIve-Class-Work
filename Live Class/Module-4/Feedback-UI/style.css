@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(60deg, #1d1d1d, 40%, #7f4c4c);
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+    height: 230px;
+    /* background: #ccc; */
+    border-radius: 23px;
+    box-shadow: 0 0 18px #000;
+    animation: colorChange 1.78s ease-in-out infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        background: #7f4c4c;
+    }
+
+    40% {
+        background: grey;
+    }
+
+    60% {
+        background: rgb(49, 96, 111);
+    }
+
+    87% {
+        background: rgb(137, 137, 100);
+    }
+
+    100% {
+        background: rgb(84, 125, 4);
+    }
+}
+
+.rating {
+    display: flex;
+    gap: 1.72rem;
+    padding: 1.63rem 0;
+
+    .rating-img {
+        padding: 0.23em;
+        border-radius: 0.34rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.23em;
+
+        img {
+            background: transparent;
+            border-radius: 50%;
+        }
+
+        &:hover {
+            cursor: pointer;
+            transition: 0.03s ease-in-out;
+            color: lavenderblush;
+        }
+
+    }
+
+    >:first-child:hover {
+        background: lightcoral;
+    }
+
+    >:nth-child(2):hover {
+        background: rgb(16, 146, 190);
+    }
+
+    >:last-child:hover {
+        background: rgb(122, 0, 73);
+    }
+}
+
+.rating-img:hover,
+.rating-img.active {
+    background: green;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: azure;
+    transition: all 300ms ease;
+}
+
+small {
+    font-weight: 786;
+    text-transform: capitalize;
+    letter-spacing: 0.028em;
+}
+
+button {
+    padding: 0.34em;
+    border: none;
+    border-radius: 0.38em;
+    background: rgb(69, 79, 124);
+    color: #7f4c4c;
+    transition: 0.14s ease-out;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 4.8px 1.7px 0.6px #1d1d1d;
+        transition: 0.14s ease-in;
+        color: antiquewhite;
+    }
+
+    h5 {
+        padding: 0.23rem;
+        font-size: 0.93rem;
+    }
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.feed-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.62em;
+
+    .choose {
+        padding: 0.46rem;
+        background: transparent;
+        border-top: 0.08em solid black;
+        border-bottom: 0.08em solid black;
+    }
+
+    h2 {
+        font-size: 1.25em;
+        font-weight: lighter;
+        letter-spacing: 0.16em;
+    }
+}
+
+p {
+    margin-top: 0.63em;
+    text-align: center;
+}
