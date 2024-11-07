@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(63deg, #c58181 36%, #ccc 87%);
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+#stopwatch {
+    display: flex;
+    transform: rotate(-4deg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .72em;
+    width: 47vw;
+    height: 47vh;
+    /* background: linear-gradient(120deg, rgb(116, 69, 22) 12%,rgb(0, 106, 108) 23%, rgb(176, 94, 94) 56%, rgba(220, 123, 244, 0.427) 68%); */
+    background: linear-gradient(120deg, rgba(220, 123, 244, 0.171) 12%, rgba(176, 94, 94, 0.461) 23%, rgba(0, 106, 108, 0.388) 56%, rgba(116, 69, 22, 0.425) 88%);
+    animation: rotated 1s ease-in-out 0.4s infinite alternate;
+    border-radius: 2rem;
+    /* box-shadow: 0 0 16px #171717; */
+    font-size: 2.78em;
+}
+
+@keyframes rotated {
+    from {
+        transform: rotate(-4deg);
+        box-shadow: 0 7px 16px #171717;
+    }
+
+    to {
+        transform: rotate(0.41deg);
+        box-shadow: 7px 0 16px #171717;
+    }
+}
+
+
+h1 {
+    color: #cccccc98;
+    text-shadow: 0 0 0.47em #171717;
+}
+
+.fa-solid{
+    animation: roT 0.24s ease-in-out  infinite alternate ;
+}
+
+@keyframes roT {
+    from{
+        transform: rotate(6deg);
+    }
+    to{
+        transform: rotate(-7deg);
+    }
+}
+
+#timer {
+    font-size: 1.3em;
+    color: #964646;
+    background: #1717171a;
+    padding: 0 1.13rem 0 1.13rem;
+    border-radius: 1.03rem;
+    box-shadow: 0 0 35px #171717;
+}
+
+.btn-container {
+    width: 26vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+
+    #start-button,
+    #stop-button,
+    #reset-button {
+        padding: .27rem .63rem .27rem .63rem;
+        font-size: .78em;
+        border-radius: .4em;
+        border: 0.08rem solid #964646;
+        background: #17171729;
+        box-shadow: 0 0 6px #17171763;
+color: #964646;
+        /* color: #c58181; */
+
+        &:hover {
+            cursor: pointer;
+            background: #96464670;
+            /* background: #c58181; */
+        }
+
+        &:disabled {
+            cursor: not-allowed;
+            background: #ffffff34;
+            color: #cccccc54;
+        }
+    }
+}
+
+@media (max-width: 928px) {
+    #stopwatch {
+        width: 78vw;
+    }
+}
+
+@media (min-width: 120px) and (max-width: 578px) {
+    body {
+        background: linear-gradient(130deg, #ccc 36%, #c58181 87%);
+    }
+
+    #stopwatch {
+        height: 83vh;
+    }
+
+    h1 {
+        word-wrap: break-word;
+        text-align: center;
+        font-size: 11vw;
+    }
+
+    #timer {
+        width: 51vw;
+        font-size: 11.2vw;
+        padding-left: 0.78vw;
+        padding-right: 0.78vw;
+        text-align: center;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        font-size: 12vw;
+    }
+
+    #start-button,
+    #stop-button,
+    #reset-button {
+        width: 51vw;
+    }
+}
+
+@media (max-width: 408px) {
+    h1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.07em;
+        font-size: 13vw;
+    }
+}
+
+@media (max-width: 292px) {
+    #stopwatch{
+        height: 62vh;
+    }
+}
