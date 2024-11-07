@@ -27,9 +27,9 @@ function tick() {
     </div>
     <div class="period">${period}</div>
   `;
+
   clock.innerHTML = html;
 }
 
 tick();
-
 setInterval(tick, 1000);
