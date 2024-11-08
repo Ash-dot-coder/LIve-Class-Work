@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(1, 65, 49);
+    font-family: "Exo 2", serif;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('images/bg-jokes.jpg') no-repeat center center / cover;
+    filter: blur(0.18rem) brightness(0.8);
+    z-index: -1;
+}
+
+#page {
+    width: 48vw;
+    height: 52vh;
+    background: #00000035;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    color: #ccc;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12rem;
+    border-radius: 2.8rem;
+}
+
+h1 {
+    font-size: 1.5em;
+    letter-spacing: .17rem;
+    text-transform: uppercase;
+    font-family: "Bona Nova SC", serif;
+
+    .h1 {
+        background: rgba(0, 128, 128, 0.459);
+        padding-left: .23rem;
+        padding-right: .23rem;
+        border-left: .17em solid #ccc;
+    }
+}
+
+#content {
+    width: 28.74vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #1d1d1dce;
+    /* padding: .62rem 1.43rem .62rem 1.43rem; */
+    /* color: #d5783f; */
+    /* color: #cccccce3; */
+    border-radius: .63rem;
+    /* background: rgba(205, 92, 92, 0.356); */
+    font-size: 1.6em;
+    background: teal;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-weight: 587;
+    word-spacing: .26rem;
+}
+
+.btn {
+    padding: 0.17rem 0.63rem 0.17rem 0.63rem;
+    /* background: #d5783f; */
+    border: 0.1rem solid teal;
+    border-radius: .38rem;
+    font-size: 1.63em;
+    background: transparent;
+    color: teal;
+    text-transform: uppercase;
+    transition: .36s ease-out;
+    font-family: "Exo 2", serif;
+
+    &:hover {
+        cursor: pointer;
+        color: #ccc;
+        border: .1rem solid #ccc;
+        background: rgba(0, 128, 128, 0.644);
+        letter-spacing: .13rem;
+        transition: .36s ease-in;
+    }
+}
