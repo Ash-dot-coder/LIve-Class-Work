@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project | Burger King Franchise</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Burger <i class="fa-solid fa-burger"></i> King Franchise</h1>
+      <div class="icons">
+        <ul>
+          <li><i class="fa-solid fa-ice-cream"></i></li>
+          <li><i class="fa-solid fa-pizza-slice"></i></li>
+          <!-- <li><i class="fa-solid fa-burger"></i></li> -->
+          <li><i class="fa-solid fa-champagne-glasses"></i></li>
+          <!-- <li><i class="fa-solid fa-cookie"></i></li> -->
+          <li><i class="fa-solid fa-mug-saucer"></i></li>
+        </ul>
+      </div>
+      <div class="input-part">
+        <div class="all-input">
+          <input type="checkbox" id="burger" value="Burger" /><span>Burger</span
+          ><br />
+          <input type="checkbox" id="fries" value="Fries" /><span>Fries</span
+          ><br />
+          <input type="checkbox" id="pizza" value="Pizza" /><span>Pizza</span
+          ><br />
+          <input type="checkbox" id="cup-cake" value="Cup-Cake" /><span
+            >Cup-Cake</span
+          ><br />
+          <input type="checkbox" id="ice-cream" value="Ice-Cream" /><span
+            >Ice-Cream</span
+          ><br />
+          <input type="checkbox" id="drink" value="Drink" /><span>Drink</span
+          ><br />
+        </div>
+        <div class="order-click">
+          <button id="order-btn">Order</button
+          ><button id="new-order-btn">New Order</button>
+        </div>
+      </div>
+      <div id="order-item"></div>
+      <div id="order-ID" class="order-ID"></div>
+    </div>
+
+    <div class="images">
+      <img
+        src="images/burger.avif"
+        alt="Burger"
+        class="food-party"
+        id="burgerImg"
+      />
+      <img
+        src="images/fries.jpg"
+        alt="Fries"
+        class="food-party"
+        id="friesImg"
+      />
+      <img
+        src="images/pizza.jpg"
+        alt="Pizza"
+        class="food-party"
+        id="pizzaImg"
+      />
+      <img
+        src="images/ice-cream.webp"
+        alt="iceCream"
+        class="food-party"
+        id="iceCream-Img"
+      />
+      <img
+        src="images/cup-cake.jpg"
+        alt="cupCream"
+        class="food-party"
+        id="cupCake-Img"
+      />
+
+      <img
+        src="images/drink.jpg"
+        alt="Drink"
+        class="food-party"
+        id="drinkImg"
+      />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

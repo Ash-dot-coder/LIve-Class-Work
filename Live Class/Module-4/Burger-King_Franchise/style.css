@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 95vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(108deg, #004d7d 25%, #d44450 45%, #ba5de9 100%);
+    animation: colorMove 1.182s ease-in-out infinite alternate;
+    font-family: "Poppins", serif;
+
+
+    li {
+        list-style: none;
+    }
+}
+
+@keyframes colorMove {
+
+    0%,
+    10% {
+        background: linear-gradient(108deg, #034d7bd5 25%, #dc6670c9 45%, #ba5de9 100%);
+    }
+
+    11%,
+    29% {
+        background: linear-gradient(108deg, #004d7da7 20%, #e4646efb 48%, #ba5de9 84%);
+    }
+
+    30%,
+    45% {
+        background: linear-gradient(108deg, #004672d4 5%, #e26e78 50%, #ba5de9 108%);
+    }
+
+    45%,
+    89% {
+        background: linear-gradient(108deg, #004672ec 15%, #e26e78 41%, #ba5de9 78%);
+    }
+
+    90%,
+    100% {
+        background: linear-gradient(108deg, #004d7d 25%, #a54f56 75%, #ba5de9 103%);
+    }
+}
+
+h1 {
+    font-size: 2.13em;
+    text-shadow: 0 0 0.21em #262626;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+}
+
+.container {
+    min-width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.icons {
+    /* width: 40%; */
+    margin: 0;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .fa-solid {
+            font-size: 4.7rem;
+            position: absolute;
+            text-shadow: 0 0 .1em #1d1d1d93;
+            color: #1d1d1d;
+        }
+
+        .fa-ice-cream {
+            top: 3rem;
+            left: 4rem;
+            transform: rotate(-36deg);
+        }
+
+        .fa-pizza-slice {
+            top: 11.87rem;
+            right: 14rem;
+        }
+
+        .fa-burger {
+            font-size: 2em;
+        }
+
+        .fa-champagne-glasses {
+            bottom: 16.87rem;
+            left: 11rem;
+            transform: rotate(-18deg);
+        }
+
+        .fa-mug-saucer {
+            bottom: 9rem;
+            right: 6rem;
+            transform: rotate(-8deg);
+        }
+
+    }
+}
+
+.input-part {
+    /* margin-top: 2rem; */
+    width: 57%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.63em;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff58;
+    box-shadow: 0.5em 0.3em 1.13em #1d1d1de8;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 587;
+
+    [type="checkbox"]:hover {
+        cursor: pointer;
+    }
+}
+
+.all-input {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.61rem;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 0 0 0.21em #262626;
+    padding: .27em;
+    border-bottom: 0.13em solid #1d1d1db0;
+    border-top: 0.13em solid #1d1d1db0;
+    font-family: "Exo 2", serif;
+
+    .fa-square-check {
+        color: rgb(87, 163, 87);
+        text-shadow: 0 0 .31em #000;
+    }
+}
+
+button {
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.6s ease-out;
+}
+
+#order-btn {
+    background-color: #04a8c1ad;
+
+    &:hover {
+        box-shadow: inset 10em 0 0 #004d7d;
+        color: #ccc;
+        transition: 0.6s ease-in;
+    }
+}
+
+#new-order-btn {
+    background-color: #dc6235c1;
+
+    &:hover {
+        box-shadow: inset -10em 0 0 #a54f56;
+        color: #ccc;
+        transition: 0.6s ease-in;
+    }
+}
+
+.images {
+    margin-top: 0.7rem;
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 0 1.3em #262626;
+}
+
+.food-party {
+    width: 200px;
+    height: 200px;
+    display: none;
+    transition: transform 0.5s;
+}
+
+.food-party.show {
+    display: block;
+    animation: sideAdd .6s ease;
+}
+
+@keyframes sideAdd {
+
+    0%,
+    100% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(-.87em);
+    }
+}
+
+.order-ID {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.445);
+    color: #ccc;
+    border-radius: 5px;
+    animation: fadeIn 0.5s ease;
+    box-shadow: 0 0 .48em #000;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
