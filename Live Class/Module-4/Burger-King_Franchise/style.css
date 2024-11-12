@@ -8,12 +8,13 @@
 
 body {
     width: 95vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: linear-gradient(108deg, #004d7d 25%, #d44450 45%, #ba5de9 100%);
+    background-repeat: no-repeat;
     animation: colorMove 1.182s ease-in-out infinite alternate;
     font-family: "Poppins", serif;
 
@@ -52,11 +53,12 @@ body {
 }
 
 h1 {
-    font-size: 2.13em;
+    font-size: 2.38vw;
     text-shadow: 0 0 0.21em #262626;
     color: #000;
     text-transform: uppercase;
     letter-spacing: 0.13em;
+    text-align: center;
 }
 
 .container {
@@ -76,42 +78,41 @@ h1 {
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
-
-        .fa-solid {
-            font-size: 4.7rem;
-            position: absolute;
-            text-shadow: 0 0 .1em #1d1d1d93;
-            color: #1d1d1d;
-        }
-
-        .fa-ice-cream {
-            top: 3rem;
-            left: 4rem;
-            transform: rotate(-36deg);
-        }
-
-        .fa-pizza-slice {
-            top: 11.87rem;
-            right: 14rem;
-        }
-
-        .fa-burger {
-            font-size: 2em;
-        }
-
-        .fa-champagne-glasses {
-            bottom: 16.87rem;
-            left: 11rem;
-            transform: rotate(-18deg);
-        }
-
-        .fa-mug-saucer {
-            bottom: 9rem;
-            right: 6rem;
-            transform: rotate(-8deg);
-        }
-
     }
+}
+
+.icons ul .fa-solid {
+    font-size: 4.7rem;
+    position: absolute;
+    text-shadow: 0 0 .1em #1d1d1d93;
+    color: #1d1d1d;
+}
+
+.fa-ice-cream {
+    top: 3rem;
+    left: 4rem;
+    transform: rotate(-36deg);
+}
+
+.fa-pizza-slice {
+    top: 11.87rem;
+    right: 14rem;
+}
+
+.fa-burger {
+    font-size: 2.78vw;
+}
+
+.fa-champagne-glasses {
+    bottom: 16.87rem;
+    left: 11rem;
+    transform: rotate(-18deg);
+}
+
+.fa-mug-saucer {
+    bottom: 9rem;
+    right: 6rem;
+    transform: rotate(-8deg);
 }
 
 .input-part {
@@ -120,6 +121,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 0.63em;
     text-align: center;
     padding: 20px;
@@ -143,12 +146,13 @@ h1 {
 }
 
 p {
-    font-size: 1.5em;
+    margin: auto;
+    width: 60%;
+    font-size: 2vw;
     font-weight: bold;
     text-shadow: 0 0 0.21em #262626;
     padding: .27em;
     border-bottom: 0.13em solid #1d1d1db0;
-    border-top: 0.13em solid #1d1d1db0;
     font-family: "Exo 2", serif;
 
     .fa-square-check {
@@ -250,5 +254,240 @@ img {
 
     to {
         opacity: 1;
+    }
+}
+
+
+
+/* Responsive */
+@media (max-width: 1203px) {
+    .icons ul .fa-solid {
+        font-size: 3.82rem;
+    }
+
+    .fa-ice-cream {
+        top: 1.73rem;
+        left: 2.4rem;
+    }
+
+    .fa-pizza-slice {
+        top: 7.87rem;
+        right: 2.4em;
+    }
+
+    .fa-champagne-glasses {
+        bottom: 8.87rem;
+        left: 7.4rem;
+    }
+
+    .fa-mug-saucer {
+        bottom: 3.9rem;
+        right: 2.6rem;
+    }
+}
+
+@media (min-width:810px) and (max-width: 968px) {
+    h1 {
+        width: 48%;
+        font-size: 3.74vw;
+        word-wrap: break-word;
+    }
+
+    .fa-ice-cream {
+        top: 4.73rem;
+        left: 2.4rem;
+    }
+
+    .fa-pizza-slice {
+        top: 11.87rem;
+        right: 1.4em;
+    }
+
+    .fa-champagne-glasses {
+        bottom: 8.87rem;
+        left: 4.4rem;
+    }
+
+    .fa-burger {
+        font-size: 3.78vw;
+    }
+
+    .fa-mug-saucer {
+        right: 3.6rem;
+    }
+    
+}
+
+
+@media (min-width: 585px) and (max-width: 809px) {
+    h1 {
+        width: 48%;
+        font-size: 4vw;
+        word-wrap: break-word;
+    }
+
+    .fa-ice-cream {
+        top: 3.73rem;
+        left: 2.4rem;
+    }
+
+    .fa-pizza-slice {
+        top: 11.87rem;
+        right: 1.1em;
+    }
+
+    .fa-champagne-glasses {
+        bottom: 8.87rem;
+        left: 1.4rem;
+    }
+
+    .fa-burger {
+        font-size: 3.8vw;
+    }
+
+    .fa-mug-saucer {
+        bottom: 4.9rem;
+        right: 1.6rem;
+    }
+
+    p {
+        width: 56%;
+        margin: auto;
+        font-size: 2.83vw;
+        word-wrap: break-word;
+        border-top: none;
+    }
+    
+}
+
+@media (min-width:410px) and (max-width: 584px) {
+    h1 {
+        width: 58%;
+        font-size: 4.7vw;
+        word-wrap: break-word;
+    }
+
+    .icons ul .fa-solid {
+        font-size: 2.82rem;
+    }
+
+    .fa-ice-cream {
+        top: 3.73rem;
+        left: .84rem;
+    }
+
+    .fa-pizza-slice {
+        top: 11.87rem;
+        right: .41em;
+    }
+
+    .fa-champagne-glasses {
+        bottom: 8.87rem;
+        left: .84rem;
+    }
+
+    .fa-burger {
+        font-size: 4.8vw;
+    }
+
+    .fa-mug-saucer {
+        bottom: 4.9rem;
+        right: .46rem;
+    }
+
+    .order-ID {
+        top: 3rem;
+        right: -2rem;
+        width: fit-content;
+        height: fit-content;
+        transform: rotate(90deg);
+    }
+
+    .all-input {
+        flex-direction: column;
+        gap: .2px;
+    }
+
+    p {
+        width: 56%;
+        margin: auto;
+        font-size: 2.83vw;
+        word-wrap: break-word;
+        border-top: none;
+    }
+    button{
+        width: 98%;
+    }
+}
+
+@media (min-width:180px) and (max-width: 410px) {
+    h1 {
+        width: 48%;
+        font-size: 4.7vw;
+        word-wrap: break-word;
+        letter-spacing: 0.18em;
+    }
+
+    .icons ul .fa-solid {
+        font-size: 11vw;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .fa-ice-cream {
+        top: 3.73rem;
+        left: .84rem;
+    }
+
+    .fa-pizza-slice {
+        top: 21.87rem;
+        right: .41em;
+    }
+
+    .fa-champagne-glasses {
+        top: 11.87rem;
+        left: .24rem;
+    }
+
+    .fa-burger {
+        font-size: 5.8vw;
+    }
+
+    .fa-mug-saucer {
+        bottom: 6.9rem;
+        right: .46rem;
+    }
+
+    .all-input {
+        flex-direction: column;
+        gap: .2px;
+    }
+
+    .order-click {
+        display: flex;
+        flex-direction: column;
+        gap: .3em;
+    }
+
+    .images img {
+        width: 38vw;
+        height: 18vh;
+        object-fit: fill;
+    }
+
+    .order-ID {
+        top: 2.8rem;
+        right: -2rem;
+        width: fit-content;
+        height: fit-content;
+        transform: rotate(90deg);
+    }
+
+    p {
+        margin: auto;
+        width: 56%;
+        font-size: 3.3vw;
+        word-wrap: break-word;
+        border-top: none;
     }
 }
