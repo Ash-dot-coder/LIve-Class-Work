@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid rgb(2, 2, 2);
+    background-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    position: relative;
+    /* animation: glow-animation 5s infinite; */
+    border-radius: 8px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-group button.save {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button-group button.clear {
+    background-color: #f44336;
+    color: white;
+}
+
+.user-card {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+.theme-selector {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.theme-selector button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.theme-light {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.theme-dark {
+    background-color: #070707;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .form-group input {
+        font-size: .9rem;
+    }
+
+    .button-group button {
+        font-size: .9rem;
+        padding: 8px;
+    }
+
+    .user-card h2 {
+        font-size: 1rem;
+    }
+
+    .user-card p {
+        font-size: .9rem;
+    }
+
+    .theme-selector button {
+        font-size: .9rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 25px 20px;
+        padding: 10px;
+    }
+
+    .container h1 {
+        font-size: 1.2rem;
+    }
+
+    .form-group label {
+        font-size: .9rem;
+    }
+
+    .form-group input {
+        font-size: .8rem;
+        padding: 8px;
+    }
+
+    .button-group button {
+        font-size: .8rem;
+        padding: 6px;
+    }
+
+    .user-card h2 {
+        font-size: .9rem;
+    }
+
+    .user-card p {
+        font-size: .8rem;
+    }
+
+    .theme-selector button {
+        font-size: .8rem;
+        padding: 6px 10px;
+    }
+}
