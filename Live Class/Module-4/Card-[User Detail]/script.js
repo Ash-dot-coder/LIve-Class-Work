@@ -54,12 +54,12 @@ clearButton.addEventListener("click", () => {
 });
 
 themeLightButton.addEventListener("click", () => {
-  document.body.style.backgroundColor = "#f0f0f0";
+  document.body.style.backgroundColor = "#a3a3a3bb";
   document.body.style.color = "black";
 });
 
 themeDarkButton.addEventListener("click", () => {
-  document.body.style.backgroundColor = "#070707";
+  document.body.style.backgroundColor = "rgba(0, 0, 0, 0.913)";
   document.body.style.color = "black";
 });
 
