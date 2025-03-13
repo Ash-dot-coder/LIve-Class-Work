@@ -5,52 +5,86 @@
 }
 
 body {
-    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    background: linear-gradient(to right, #351454, #557596);
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px;
     margin: auto;
 }
 
+.container {
+    width: 38vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .63em;
+}
+
 h1 {
     margin: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .21em;
+    text-transform: uppercase;
+    font-weight: 890;
+    border-bottom: .2px solid black;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 textarea {
-    width: 100%;
+    width: 90%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #4784d422;
     height: 200px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1.72em;
+    color: #ccc;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #d1a7d4;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #options {
     display: flex;
-    justify-content: flex-start;
-    gap: 7rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    color: #ccc;
 }
 
 #status {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 button {
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    text-align: center;
     padding: 10px 20px;
     font-size: 16px;
-    color: black;
+    color: #ccc;
     font-weight: bold;
-    background-color: #c58eee;
-    border: 2px solid rgb(181, 56, 169);
+    background-color: #32144a;
+    border: .2px solid #ccccccba;
     border-radius: 5px;
     cursor: pointer;
+    letter-spacing: .3em;
+    font-weight: 673;
     transition: background-color 0.3s;
+    transition: .34s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 button:hover {
-    background-color: #d1a7d4;
+    background-color: #cccccc4a;
+    color: #32144a;
+    font-weight: 600;
+    border: 1.22px solid #32144a;
 }
