@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lavishly+Yours&family=Macondo&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lavishly Yours", serif;
+}
+
+body {
+    height: 100vh;
+    background-color: rgba(69, 128, 107, 0.895);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #713e3e;
+    text-shadow: 0 0 .8px #000;
+}
+
+.image-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(63, 116, 98, 0.895);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container img {
+        max-width: 90%;
+    }
+}
