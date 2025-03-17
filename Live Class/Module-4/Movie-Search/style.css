@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #121111;
+    background-color: #181717;
 }
 
 .search-container {
@@ -18,26 +18,31 @@ body {
     border-radius: 10px;
     position: sticky;
     z-index: 1;
-    background-color: crimson;
+    background-color: rgb(3, 116, 99);
 }
 
 .logos {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.52rem;
 }
 
 .search-container span {
     font-weight: bold;
     font-size: 1.4rem;
-    color: rgb(218, 180, 187);
+    color: #181717;
+    text-transform: uppercase;
+    letter-spacing: 1vw;
     text-shadow: 4px 4px 10px #000;
+    border-left: .8px solid #000;
+    padding-left: .3rem;
 }
 
 #logo {
-    width: 60px;
+    width: 53px;
     border-radius: 50px;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
+    box-shadow: 0 0 10px black;
 }
 
 input {
@@ -46,6 +51,10 @@ input {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    background: #181717;
+    color: rgb(3, 116, 99);
+    font-weight: bold;
+    font-size: 1em;
     cursor: pointer;
 }
 
@@ -62,12 +71,16 @@ input {
     flex-direction: column;
     align-items: center;
     width: 200px;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(34, 192, 168);
+    font-weight: 783;
+    letter-spacing: .23vw;
+    text-shadow: 0 0 10px #000;
     border-radius: 8px;
     overflow: hidden;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    background-color: rgb(3, 116, 99);
+    box-shadow: 0 0 10px rgb(4, 75, 65);
     cursor: pointer;
+    text-transform: uppercase;
     transition: transform .3s ease-in-out;
     border: 2px solid black;
 }
@@ -76,7 +89,7 @@ input {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #000;
 }
 
 .movie-card:hover {
@@ -111,13 +124,14 @@ input {
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #be3c3c;
     margin: 10% auto;
     padding: 20px;
     border-radius: 8px;
     width: 50%;
     max-width: 400px;
     text-align: center;
+    border-radius: 17px;
     position: relative;
 }
 
@@ -134,17 +148,19 @@ input {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+    border-radius:  1vw;
 }
 
 .modal p {
-    font-size: 16px;
+    font-size: 21px;
     margin-bottom: 10px;
 }
 
 #modal-description::first-letter {
     font-size: 1.5rem;
     font-weight: 500;
-    color: rgb(18, 41, 41);
+    color: #000;
+    font-family: cursive;
 }
 
 @media (max-width: 768px) {
