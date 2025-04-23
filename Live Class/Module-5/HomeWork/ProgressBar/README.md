@@ -1,1 +1,1 @@
-<p>Hosted Link: https://progress-bar-react-js-git-main-priyamaitys-projects.vercel.app/</p>
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-darkblue?style=for-the-badge)](https://geek-progress-bar.vercel.app/)
